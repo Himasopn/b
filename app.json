@@ -1,0 +1,30 @@
+{
+  "name": "YouTube Telegram Bot",
+  "description": "A simple YouTube downloader bot for Telegram",
+  "keywords": [
+    "telegram",
+    "bot",
+    "youtube",
+    "downloader"
+  ],
+  "repository": "https://github.com/yourusername/yt-telegram-bot",
+  "logo": "https://telegram.org/img/t_logo.png",
+  "success_url": "/",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
